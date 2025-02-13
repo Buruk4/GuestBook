@@ -22,7 +22,7 @@ This is a simple Guestbook app built with **React** and **Firebase** using **Vit
 - **`src/App.jsx`**: The main React component that integrates the login and message display.
 - **`src/main.jsx`**: The entry point of the application that renders `App.jsx` to the DOM.
 - **`src/index.css`**: Global styles for the application.
-- **`src/App.css`**: App-specific styling for the Guestbook app.
+
 
 ## How to Run Locally
 
