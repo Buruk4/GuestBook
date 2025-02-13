@@ -29,7 +29,7 @@ This is a simple Guestbook app built with **React** and **Firebase** using **Vit
 ### 1. Clone the repository:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/Buruk4/GuestBook/tree/main
 ```
 
 ### 2. Install dependencies:
