@@ -1,4 +1,8 @@
 @import "tailwindcss";
+body {
+  background-color: #ffffff; /* Default background color */
+  color: #000000; /* Default text color */
+}
 
 /* Custom scrollbar */
 .custom-scrollbar::-webkit-scrollbar {
