@@ -2,12 +2,30 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="./src/assets/messaging_logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GuestBookApp</title>
+    <!-- Add the favicon -->
+    <link rel="icon" type="image/png" href="/src/assets/messaging_logo.png" />
+
+    <!-- Meta Tags for better SEO and social sharing -->
+    <meta
+      name="description"
+      content="GuestBookApp - A platform for messaging and guestbook interaction"
+    />
+    <meta property="og:title" content="GuestBookApp" />
+    <meta
+      property="og:description"
+      content="Join GuestBookApp and leave your messages!"
+    />
+    <meta property="og:image" content="/src/assets/messaging_logo.png" />
+    <meta property="og:url" content="https://guest-book-app-psi.vercel.app/" />
+    <meta name="twitter:card" content="summary_large_image" />
   </head>
+
   <body>
     <div id="root"></div>
+
+    <!-- Ensure React is loaded properly -->
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
