@@ -57,22 +57,30 @@ const ChatPage = () => {
   };
 
   return (
-    <div className="min-h-screen flex bg-[#252836] text-white">
+    <div className="min-h-screen flex bg-[#252836]  text-white">
+      {/* Sidebar */}
       <Sidebar
         isSidebarOpen={isSidebarOpen}
         setIsSidebarOpen={setIsSidebarOpen}
         handleLogout={handleLogout}
       />
-      <div className="flex-1 flex flex-col">
+
+      {/* Main Chat Area */}
+      <div className="flex-1 flex flex-col h-full overflow-hidden">
+        {/* Header */}
         <Head setIsSidebarOpen={setIsSidebarOpen} />
-        <div className="flex-1 overflow-y-auto p-4">
+
+        {/* Message List - Takes full height */}
+        <div className="flex-1 flex flex-col overflow-hidden h-full">
           <MessageList messages={messages} user={user} />
         </div>
-        <MessageInput
-          message={message}
-          setMessage={setMessage}
-          handleSubmit={handleSubmit}
-        />
+        <div className="mt-0">
+          <MessageInput
+            message={message}
+            setMessage={setMessage}
+            handleSubmit={handleSubmit}
+          />
+        </div>
       </div>
     </div>
   );

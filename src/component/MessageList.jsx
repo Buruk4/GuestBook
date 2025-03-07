@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { db } from "../firebase";
 import { deleteDoc, doc } from "firebase/firestore";
+import MessageInput from "./MessageInput";
 
 const MessageList = ({ messages, user }) => {
   const messagesEndRef = useRef(null);
@@ -18,12 +19,11 @@ const MessageList = ({ messages, user }) => {
   };
 
   return (
-    <div className="w-full md:w-2/3 bg-[#2c2f3e] p-6 rounded-lg shadow-lg flex flex-col h-[500px] md:h-[600px] overflow-hidden md:relative fixed right-0 bottom-16 md:bottom-0">
-      <h3 className="text-xl font-semibold mb-4">Messages</h3>
-      <div
-        className="flex-1 overflow-y-auto space-y-2 p-2"
-        style={{ maxHeight: "450px" }}
-      >
+    <div className="w-full md:w-2/3 bg-[#2c2f3e] p-6 rounded-lg shadow-lg flex flex-col h-[calc(100vh-160px)] md:h-[calc(100vh-120px)]">
+      <h3 className="text-xl font-semibold mb-4 text-white">Messages</h3>
+
+      {/* Messages List - Takes Full Available Height */}
+      <div className="flex-1 overflow-y-auto space-y-2 p-2">
         {messages
           .sort((a, b) => a.timestamp - b.timestamp)
           .map((msg) => (
@@ -31,9 +31,9 @@ const MessageList = ({ messages, user }) => {
               key={msg.id}
               className={`flex items-start gap-2 p-2 rounded-md max-w-xs md:max-w-md w-fit ${
                 user && user.uid === msg.uid
-                  ? "ml-auto flex-row-reverse"
-                  : "mr-auto"
-              } shadow-md bg-[#1f222e] relative`}
+                  ? "ml-auto flex-row-reverse bg-[#1f222e]"
+                  : "mr-auto bg-[#1f222e]"
+              } shadow-md relative`}
             >
               {msg.imageUrl && (
                 <img
