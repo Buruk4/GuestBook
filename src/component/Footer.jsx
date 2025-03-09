@@ -18,7 +18,7 @@ const Footer = () => {
             Privacy Policy
           </Link>
           <Link
-            to="/terms-of-service"
+            to="/terms-of-services"
             className="text-lg mx-4 hover:text-[#f9fafb]"
           >
             Terms of Service
