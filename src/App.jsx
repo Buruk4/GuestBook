@@ -7,7 +7,7 @@ import SignUp from "./Pages/SignUp";
 import Profile from "./Pages/Profile";
 import About from "./Pages/About";
 import TermsOfService from "./Pages/TermsOfService";
-import PrivacyPolicy from "./Pages/PrivancyPolice";
+import PrivacyPolicy from "./Pages/PrivancyPolicy";
 
 const App = () => {
   return (
@@ -20,7 +20,7 @@ const App = () => {
           <Route path="/chat" element={<ChatPage />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-          <Route path="/terms-of-service" element={<TermsOfService />} />
+          <Route path="/terms-of-services" element={<TermsOfService />} />
           <Route path="/about" element={<About />} />
         </Routes>
       </Router>

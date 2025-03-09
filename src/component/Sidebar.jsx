@@ -60,26 +60,26 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen, handleLogout }) => {
             <div className="space-y-2 mt-2">
               <button
                 onClick={() => handleThemeChange("dark")}
-                className="w-full p-2 rounded-md bg-gray-700 hover:bg-gray-600 text-white"
+                className="w-full rounded-md bg-gray-700 hover:bg-gray-600 text-white"
               >
                 Dark Mode
               </button>
               <button
                 onClick={() => handleThemeChange("default")}
-                className="w-full p-2 rounded-md bg-gray-700 hover:bg-gray-600 text-white"
+                className="w-full rounded-md bg-gray-700 hover:bg-gray-600 text-white"
               >
                 Default Mode
               </button>
               <button
                 onClick={() => handleThemeChange("white")}
-                className="w-full p-2 rounded-md bg-gray-700 hover:bg-gray-600 text-white"
+                className="w-full  rounded-md bg-gray-700 hover:bg-gray-600 text-white"
               >
                 White Mode
               </button>
             </div>
           )}
         </div>
-
+        <div></div>
         {/* Logout button */}
         <button
           onClick={handleLogout}

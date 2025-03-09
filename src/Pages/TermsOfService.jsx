@@ -1,4 +1,3 @@
-// src/Pages/TermsOfService.jsx
 import React from "react";
 
 const TermsOfService = () => {
